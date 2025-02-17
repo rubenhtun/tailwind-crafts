@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Poppins and Philosopher -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind Config to Extend Font -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+              philosopher: ["Philosopher", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-[#c1c2bc] flex justify-center items-center h-screen">
+    <!-- Coffee Card -->
+    <div class="bg-[#d9d9d9] w-64 shadow-lg px-3 pb-3">
+      <h3 class="font-poppins font-bold text-lg text-gray-800">
+        CP. CODE PARALLEL
+      </h3>
+      <p class="font-philosopher text-sm text-gray-800 mt-3 text-right">
+        art catheropy · visual design
+      </p>
+      <img src="./images/coffee.jpg" alt="coffee" class="w-full" />
+    </div>
+  </body>
+</html>

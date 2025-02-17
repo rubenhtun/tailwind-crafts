@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhotoFolio</title>
+    <link rel="icon" href="./assets/img/x-icon.png" type="image/x-icon" />
+    <!-- Font Awesome CDN Link -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CDN Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Vanilla CSS Link -->
+    <style>
+      /* General scrollbar styling */
+      body::-webkit-scrollbar {
+        width: 12px;
+      }
+      body::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      body::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #42a5f5, #90caf9);
+        border-radius: 10px;
+        border: 3px solid #f1f1f1;
+      }
+      body::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(180deg, #1565c0, #5e92f3);
+      }
+      body::-webkit-scrollbar:horizontal {
+        height: 12px;
+      }
+      /* General img box styling */
+      .img-info {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out;
+      }
+      .img-box:hover .img-info {
+        height: auto;
+        padding: 10px 20px;
+        background-color: #222222;
+      }
+    </style>
+  </head>
+  <body
+    class="overflow-y-scroll scrollbar scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-gray-200"
+  >
+    <!-- hero section start -->
+    <div
+      class="hero-img bg-no-repeat bg-center bg-cover w-full h-[70vh] lg:h-screen transition-all duration-1000 relative"
+    >
+      <!-- navbar star -->
+      <div
+        class="nav-bar flex justify-between items-center text-white p-[30px] md:p-[40px] lg:px-16 lg:py-8 sticky top-0 z-50"
+      >
+        <h1 class="text-xl md:text-2xl lg:text-3xl relative cursor-pointer">
+          photofolio
+          <small class="text-base absolute -top-[5px]">®</small>
+        </h1>
+        <div class="nav-link-group flex justify-between items-center">
+          <i class="fa-solid fa-bars md:hidden"></i>
+          <ul class="hidden md:flex md:space-x-4 lg:space-x-8 items-center">
+            <li>
+              <a
+                href="#example-sites"
+                class="tracking-wide relative inline-block after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-white hover:after:w-full hover:after:transition-all hover:after:duration-300"
+                >example sites</a
+              >
+            </li>
+            <li>
+              <a
+                href="#features"
+                class="tracking-wide relative inline-block after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-white hover:after:w-full hover:after:transition-all hover:after:duration-300"
+                >features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#pricing"
+                class="tracking-wide relative inline-block after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-white hover:after:w-full hover:after:transition-all hover:after:duration-300"
+                >pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#support"
+                class="tracking-wide relative inline-block after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-white hover:after:w-full hover:after:transition-all hover:after:duration-300"
+                >support</a
+              >
+            </li>
+          </ul>
+          <button
+            class="md:ml-4 lg:ml-8 p-1 lg:p-2 border-[1px] text-sm hover:bg-white hover:text-black hover:opacity-90 transition-all duration-300 ease-in-out hidden md:flex"
+          >
+            GET STARTED
+          </button>
+        </div>
+      </div>
+      <!-- navbar end -->
+
+      <!-- headline start -->
+      <div
+        class="headline absolute left-14 bottom-8 lg:left-24 lg:bottom-16 text-white"
+      >
+        <h1 class="text-3xl lg:text-5xl">Award Winning</h1>
+        <h1 class="text-3xl lg:text-5xl">Portfolio Websites</h1>
+        <h4 class="text-lg lg:text-xl mt-3">Buit for Professionals</h4>
+
+        <div class="get-started flex items-center mt-12">
+          <button
+            class="p-2 lg:px-8 lg:py-3 border-[1px] text-sm bg-white text-black hover:bg-white hover:opacity-90"
+          >
+            GET STARTED
+          </button>
+          <div class="ml-6 text-sm">
+            <p>Free trial.</p>
+            <p>No credit card required.</p>
+          </div>
+        </div>
+      </div>
+      <!-- headline end -->
+    </div>
+    <!-- hero section end -->
+
+    <!-- carousel start -->
+    <div
+      class="carousel-container w-full grid grid-cols-12 gap-4 pb-16 p-4 lg:p-16"
+    >
+      <div
+        class="img-box p-6 h-[250px] col-span-12 md:col-span-6 lg:col-span-4 group cursor-pointer"
+      >
+        <img
+          class="w-full h-full object-cover transition-all duration-500 ease-in-out group-hover:-translate-y-4"
+          src="./assets/img/carousel-displayed-1.jpg"
+          alt=""
+        />
+        <div
+          class="img-info w-full -translate-y-4 transition-all duration-500 ease-in-out"
+        >
+          <h4 class="text-lg font-medium text-gray-300">Erik Umphery</h4>
+          <p class="text-sm text-gray-400">Professional Photographer</p>
+        </div>
+      </div>
+
+      <div
+        class="img-box p-6 h-[250px] col-span-12 md:col-span-6 lg:col-span-4 group cursor-pointer"
+      >
+        <img
+          class="w-full h-full object-cover transition-all duration-500 ease-in-out group-hover:-translate-y-4"
+          src="./assets/img/carousel-displayed-2.jpg"
+          alt=""
+        />
+        <div
+          class="img-info w-full -translate-y-4 transition-all duration-500 ease-in-out"
+        >
+          <h4 class="text-lg font-semibold text-gray-300">
+            Jennifer Silverberg
+          </h4>
+          <p class="text-sm text-gray-200">Professional Photographer</p>
+        </div>
+      </div>
+
+      <div
+        class="img-box p-6 h-[250px] col-span-12 md:col-span-6 lg:col-span-4 group cursor-pointer"
+      >
+        <img
+          class="w-full h-full object-cover transition-all duration-500 ease-in-out group-hover:-translate-y-4"
+          src="./assets/img/carousel-displayed-3.jpg"
+          alt=""
+        />
+        <div
+          class="img-info w-full -translate-y-4 transition-all duration-500 ease-in-out"
+        >
+          <h4 class="text-lg font-semibold text-gray-300">christiankozowyk</h4>
+          <p class="text-sm text-gray-200">Professional Photographer</p>
+        </div>
+      </div>
+    </div>
+    <!-- carousel end -->
+
+    <!-- portfolio delivery start -->
+    <div class="portfolio-delivery w-full grid grid-cols-12 bg-[#494747]">
+      <div
+        class="portfolio-delivery-left info col-span-12 lg:col-span-5 p-8 md:p-16 text-white"
+      >
+        <h1 class="text-2xl lg:text-3xl font-semibold">
+          Trusted to deliver stunning portfolios everywhere.
+        </h1>
+        <p class="text-xs py-6">
+          With cutting-edge cloud-based infrastructure, you can be sure your
+          clients are getting lighting fast performance, no matter where they
+          are.
+        </p>
+        <ul class="text-[1.2rem] md:text-2xl list-none">
+          <li
+            class="relative w-fit cursor-pointer after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white transition-all duration-300 hover:after:w-full hover:translate-x-4"
+          >
+            photographers
+          </li>
+          <li
+            class="relative w-fit cursor-pointer after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white transition-all duration-300 hover:after:w-full hover:translate-x-4"
+          >
+            cinematographers
+          </li>
+          <li
+            class="relative w-fit cursor-pointer after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white transition-all duration-300 hover:after:w-full hover:translate-x-4"
+          >
+            directors
+          </li>
+          <li
+            class="relative w-fit cursor-pointer after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white transition-all duration-300 hover:after:w-full hover:translate-x-4"
+          >
+            artists
+          </li>
+          <li
+            class="relative w-fit cursor-pointer after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white transition-all duration-300 hover:after:w-full hover:translate-x-4"
+          >
+            architects
+          </li>
+          <li
+            class="relative w-fit cursor-pointer after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white transition-all duration-300 hover:after:w-full hover:translate-x-4"
+          >
+            agencies
+          </li>
+        </ul>
+      </div>
+      <div class="portfolio-delivery-right col-span-12 lg:col-span-7">
+        <img
+          src="./assets/img/portfolio-1.jpg"
+          alt="portfolio"
+          class="portfolio w-full h-full object-cover transition-all ease-in-out duration-300"
+        />
+      </div>
+    </div>
+    <!-- portfolio delivery end -->
+
+    <!-- pro features start -->
+    <div
+      class="pro-features w-full grid grid-cols-1 lg:grid-cols-12 bg-[#494747]"
+    >
+      <div
+        class="pro-features-left h-[300px] sm:h-[400px] lg:h-[500px] col-span-12 lg:col-span-7 bg-[url('./assets/img/admin-preview-dark.jpg')] bg-cover bg-center transition-all ease-in-out duration-500 relative order-2 lg:order-1"
+      >
+        <div class="theme absolute left-4 lg:left-16 bottom-2 lg:bottom-6">
+          <span
+            class="dark-hover cursor-pointer text-sm text-black relative inline-block after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-black hover:after:w-full hover:after:transition-all hover:after:duration-300"
+            >dark</span
+          >
+          <span
+            class="light-hover ml-2 cursor-pointer text-sm text-white relative inline-block after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-white hover:after:w-full hover:after:transition-all hover:after:duration-300"
+          >
+            light
+          </span>
+        </div>
+      </div>
+      <div
+        class="pro-features-right col-span-12 lg:col-span-5 p-4 sm:p-8 md:p-12 lg:p-20 text-white order-1 lg:order-2"
+      >
+        <h1 class="text-2xl sm:text-3xl font-bold">
+          <i class="fa-solid fa-sliders"></i> Pro Features
+        </h1>
+        <p class="text-xs sm:text-sm mt-3 mb-4">
+          Quality matters. We have worked to achieve the set of features and
+          user experience that your clients will love and have come to expect.
+        </p>
+        <ul class="text-sm">
+          <li>- Patented Website Editor</li>
+          <li>- Hardware accelerated software</li>
+          <li>- Fast delivery of your site anywhere in the world</li>
+          <li>- Hide or password protect any page or gallery</li>
+          <li>- Endlessly Customizable</li>
+          <li>- Deeplink to each image and page on your site</li>
+          <li>- Create custom PDF portfolios</li>
+          <li>- Custom lightboxes (new)</li>
+          <li>- Search feature using Tags and Keywords (new)</li>
+          <li>- Full-resolution content delivery (new)</li>
+        </ul>
+      </div>
+    </div>
+    <!-- pro features end -->
+
+    <!-- customer service start -->
+    <div class="customer-service w-full grid grid-cols-12">
+      <div
+        class="customer-service-left col-span-12 lg:col-span-6 space-y-4 md:pl-16 p-6"
+      >
+        <h4 class="text-lg font-semibold text-blue-600">Industry Leading</h4>
+        <h2 class="text-2xl font-bold text-gray-800">Customer Service</h2>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Many companies outsource portions of their key services, including
+          customer support. At Photofolio® we employ our own highly skilled and
+          experienced in-house support staff. Due to the cumulative effects of
+          great support and tightly integrated product development, our customer
+          service is 2nd to none in the industry.
+        </p>
+        <span class="font-medium text-gray-700 my-8"
+          >A small sample of the feedback we receive:</span
+        >
+        <blockquote class="testimonial p-4 border-l-4 border-blue-200 italic">
+          <p>
+            Just wanna say you guys have amazing customer service. I have never
+            dealt with a company that was so responsive and communicative and
+            never condescending on tech issues.
+          </p>
+          <footer class="mt-2 text-left text-blue-600">
+            - <cite class="not-italic">Jen</cite>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial p-4 border-l-4 border-blue-200 italic">
+          <p>
+            I wanted to let you know that your product is bar none, the best
+            available as is your staff. I could literally file a support ticket
+            and (not including the automated response) would often times have a
+            response in less than two minutes.
+          </p>
+          <footer class="mt-2 text-left text-blue-600">
+            - <cite class="not-italic">Erik Skaar</cite>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="customer-service-right col-span-12 lg:col-span-6">
+        <img
+          src="./assets/img/office-1.jpg"
+          alt="office-1"
+          class="w-ful h-full object-cover"
+        />
+      </div>
+    </div>
+
+    <!-- customer service end -->
+
+    <!-- social links start -->
+    <div class="social-frag">
+      <ul
+        class="social-link-group flex space-x-1.5 h-20 bg-gray-100 flex justify-center items-center"
+      >
+        <li>
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook-f text-lg"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" target="_blank">
+            <i class="fa-brands fa-twitter text-lg"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram text-lg"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.vimeo.com" target="_blank">
+            <i class="fa-brands fa-vimeo-v text-lg"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- social links end -->
+
+    <!-- footer start -->
+    <div
+      class="footer w-full min-h-[75vh] grid grid-cols-12 gap-4 bg-black text-white text-sm px-[40px] pt-[60px] md:px-[80px] md:pt-[100px]"
+    >
+      <!-- Photofolio Section -->
+      <div class="photofolio col-span-12 lg:col-span-4 text-gray-400">
+        <h2 class="text-xl font-semibold text-slate-50">PHOTOFOLIO</h2>
+        <p class="py-4 text-gray-500">
+          Photofolio.com is a leading cloud-based website platform with
+          thousands of users worldwide. We make it simple for anyone to make a
+          professional web portfolio.
+        </p>
+        <p class="text-gray-100">© 2008-2024 Aphotofolio.com, Inc</p>
+      </div>
+
+      <!-- Product Section -->
+      <div class="col-span-6 md:col-span-3 lg:col-span-2 text-gray-400">
+        <ul class="uppercase space-y-2">
+          <li class="text-slate-50">Product</li>
+          <li class="hover:text-slate-50 cursor-pointer">Pricing</li>
+          <li class="hover:text-slate-50 cursor-pointer">Feature List</li>
+          <li class="hover:text-slate-50 cursor-pointer">Design Services</li>
+          <li class="hover:text-slate-50 cursor-pointer">Documentation</li>
+        </ul>
+      </div>
+
+      <!-- Company Section -->
+      <div class="col-span-6 md:col-span-3 lg:col-span-2 text-gray-400">
+        <ul class="uppercase space-y-2">
+          <li class="text-slate-50">Company</li>
+          <li class="hover:text-slate-50 cursor-pointer">About</li>
+          <li class="hover:text-slate-50 cursor-pointer">Team</li>
+          <li class="hover:text-slate-50 cursor-pointer">Privacy Policy</li>
+          <li class="hover:text-slate-50 cursor-pointer">Terms of Service</li>
+          <li class="hover:text-slate-50 cursor-pointer">Sustainability</li>
+          <li class="hover:text-slate-50 cursor-pointer">Contact</li>
+          <li class="hover:text-slate-50 cursor-pointer">General Inquiry</li>
+          <li class="hover:text-slate-50 cursor-pointer">Sitemap</li>
+        </ul>
+      </div>
+
+      <!-- Follow Section -->
+      <div class="col-span-6 md:col-span-3 lg:col-span-2 text-gray-400">
+        <ul class="uppercase space-y-2">
+          <li class="text-slate-50">Follow</li>
+          <li class="hover:text-slate-50 cursor-pointer">Photofolio News</li>
+          <li class="hover:text-slate-50 cursor-pointer">AphotoEditor</li>
+          <li class="hover:text-slate-50 cursor-pointer">Instagram</li>
+          <li class="hover:text-slate-50 cursor-pointer">Facebook</li>
+          <li class="hover:text-slate-50 cursor-pointer">Twitter</li>
+          <li class="hover:text-slate-50 cursor-pointer">Vimeo</li>
+        </ul>
+      </div>
+
+      <!-- Support Section -->
+      <div class="col-span-6 md:col-span-3 lg:col-span-2 text-gray-400">
+        <ul class="uppercase space-y-2">
+          <li class="text-slate-50">Support</li>
+          <li class="hover:text-slate-50 cursor-pointer">Help Docs</li>
+          <li class="hover:text-slate-50 cursor-pointer">Support Center</li>
+          <li class="hover:text-slate-50 cursor-pointer">General Inquiry</li>
+        </ul>
+      </div>
+    </div>
+    <!-- footer end -->
+
+    <!-- help button start -->
+    <button
+      class="font-medium bg-blue-500 py-2 px-6 rounded-full fixed right-5 bottom-4 hover:bg-blue-600 hover:text-white shadow-lg transition-all duration-300"
+    >
+      <i class="fa-regular fa-circle-question mr-2"></i>Help
+    </button>
+    <!-- help button end -->
+
+    <!-- js start -->
+    <script>
+      /**
+       # Hero Image Transition
+       **/
+      const images = [
+        "./assets/img/first-hero.jpg",
+        "./assets/img/second-hero.jpg",
+      ];
+
+      const heroImgElement = document.querySelector(".hero-img");
+
+      let i = 0;
+
+      const changeHeroImage = () => {
+        heroImgElement.style.backgroundImage = `url(${images[i]})`;
+        heroImgElement.classList.add("opacity-50");
+        setTimeout(() => heroImgElement.classList.remove("opacity-50"), 1500);
+        i = (i + 1) % images.length;
+      };
+
+      setInterval(changeHeroImage, 5000);
+      changeHeroImage();
+
+      /**
+       # Pro Features Image Theme Hover
+       **/
+      proFeatureTheme = document.querySelector(".pro-features-left");
+      lightHoverElement = document.querySelector(".light-hover");
+
+      lightHoverElement.addEventListener("mouseover", () => {
+        proFeatureTheme.style.backgroundImage =
+          "url('./assets/img/admin-preview-light.jpg')";
+      });
+
+      lightHoverElement.addEventListener("mouseout", () => {
+        proFeatureTheme.style.backgroundImage = "";
+      });
+
+      /**
+        # Portfolio Image Transition Event
+      **/
+      const portfolios = [
+        "./assets/img/portfolio-1.jpg",
+        "./assets/img/portfolio-2.jpg",
+        "./assets/img/portfolio-3.jpg",
+        "./assets/img/portfolio-4.jpg",
+        "./assets/img/portfolio-5.jpg",
+      ];
+
+      let j = 0;
+
+      const changePortfolio = () => {
+        const portfolioElement = document.querySelector(".portfolio");
+        portfolioElement.src = portfolios[j];
+        j = (j + 1) % portfolios.length; // Loop through the array
+      };
+
+      setInterval(changePortfolio, 7000);
+    </script>
+    <!-- js end -->
+  </body>
+</html>
