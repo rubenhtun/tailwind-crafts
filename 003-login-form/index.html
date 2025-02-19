@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Form</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
-
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Fontawesome CDN -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
-
-  <body class="h-screen flex">
+  <body class="min-h-screen flex flex-col md:flex-row md:h-screen">
     <!-- Left Section -->
     <div
-      class="w-1/2 flex flex-col items-center justify-center bg-black text-white"
+      class="w-full md:w-1/2 flex flex-col items-center justify-center bg-black text-white p-6"
     >
-      <i class="fa-solid fa-code text-7xl"></i>
-      <span class="mt-4 text-2xl font-semibold">Code Parallel</span>
+      <i class="fa-solid fa-code text-6xl"></i>
+      <span class="mt-4 text-xl font-semibold">Code Parallel</span>
     </div>
 
     <!-- Right Section -->
-    <div class="w-1/2 flex items-center justify-center bg-white">
+    <div class="w-full md:w-1/2 flex items-center justify-center bg-white p-6">
       <div class="w-full max-w-sm">
-        <h3 class="text-3xl font-semibold text-gray-700 text-center">
+        <h3 class="text-2xl font-semibold text-gray-700 text-center">
           Sign In
         </h3>
 
