@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter Subscription</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body
+    class="flex items-center justify-center h-screen bg-gradient-to-r from-blue-100 to-blue-300"
+  >
+    <div
+      class="container mx-auto flex flex-col md:flex-row items-center justify-center bg-white p-10 rounded-tl-full rounded-bl-full shadow-lg"
+    >
+      <!-- Left Fragment -->
+      <div class="w-full md:w-1/2 p-5">
+        <h1 class="text-4xl font-bold text-gray-800">
+          Subscribe to our newsletter
+        </h1>
+        <p class="text-gray-600 text-lg mt-4">
+          Stay updated with the latest news, exclusive offers, and insights
+          delivered straight to your inbox.
+        </p>
+        <form action="" class="flex items-center w-full mt-6">
+          <input
+            type="text"
+            placeholder="Enter your email address"
+            class="p-3 border-2 border-blue-400 rounded-tl-full rounded-bl-full w-3/4 focus:outline-none focus:ring-1 focus:ring-blue-500 transition duration-300 shadow-sm"
+          />
+          <button
+            type="submit"
+            class="bg-blue-500 text-white px-5 py-3 rounded-tr-full rounded-br-full font-semibold hover:bg-blue-600 transition duration-300 shadow-md flex items-center gap-2"
+          >
+            <i class="fas fa-paper-plane"></i> Subscribe
+          </button>
+        </form>
+      </div>
+
+      <!-- Right Fragment -->
+      <div class="w-full md:w-1/2 flex justify-center">
+        <img
+          src="./images/news-letter-girl.png"
+          alt="Newsletter Illustration"
+          class="max-w-xs md:max-w-md"
+        />
+      </div>
+    </div>
+  </body>
+</html>
